@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tìm kiếm sinh viên</title>
+</head>
+<body>
+    <form action="../Controller/C_Student.php" method="POST"   style="width: 400px; height:500px; padding:20px; margin-left:35%;display: grid; border-radius: 10px; border: 3px double gray">
+        <h1>Tìm kiếm sinh viên</h1>
+		<label for="id">ID:</label>
+		<input type="text" id="id" name="id">
+		<br><br>
+		<label for="name">Tên:</label>
+		<input type="text" id="name" name="name">
+		<br><br>
+		<label for="age">Tuổi:</label>
+		<input type="number" id="age" name="age">
+		<br><br>
+		<label for="university">Trường đại học:</label>
+		<input type="text" id="university" name="university">
+		<br><br>
+		<input type="submit" name="search" value="Tìm kiếm">
+         <p><a href="../index.php">Home Page</a></p>
+	</form>
+</body>
+</html>

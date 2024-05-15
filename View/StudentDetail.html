@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chi Tiet sinh vien</title>
+</head>
+
+<body>
+    <h2>Chi Tiet sinh vien</h2>
+    <?php if ($student): ?>
+        <p>Name: <b><?php echo $student->name; ?></b></p>
+        <p>Age: <?php echo $student->age; ?></p>
+        <p>University: <?php echo $student->university; ?></p>
+    <?php else: ?>
+        <p>Student not found.</p>
+    <?php endif; ?>
+    <br>
+    <p><a href="javascript:history.back()">Home Page</a></p>
+</body>
+
+</html>

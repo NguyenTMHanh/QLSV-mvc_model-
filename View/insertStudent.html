@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Them sinh vien</title>
+  </head>
+  <body>
+      <form action="../Controller/C_Student.php" method="POST"  style="width: 400px; height:600px; padding:20px; margin-left:35%;display: grid; border-radius: 10px; border: 3px double gray">
+        <h2 style=" display:flex;justify-content: center;">Insert student</h2>
+        <td><label for="id">ID:</label> </td>
+        <td><input type="text" id="id" name="id" required /><br /><br /></td>
+
+        <label for="name">Tên:</label>
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="age">Tuổi:</label>
+        <input type="text" id="age" name="age" required /><br /><br />
+
+        <label for="university">Trường đại học:</label>
+        <input
+          type="text"
+          id="university"
+          name="university"
+          required
+        /><br /><br />
+
+        <input type="submit" name="insert" value="Thêm" />
+        <br />
+        <p><a href="javascript:history.back()">Home Page</a></p>
+      </form>
+
+  </body>
+</html>
+
+

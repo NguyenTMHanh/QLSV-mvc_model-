@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Danh sach sinh vien</title>
+</head>
+
+<body>
+ <h2>Chon sinh vien muon xoa</h2>
+    <?php foreach ($studentList as $student): ?>
+        <p>
+            <?php echo $student->id; ?>. 
+            <a href="?deleteid=<?php echo $student->id; ?>">
+                <?php echo $student->name; ?>
+            </a>
+        </p>
+    <?php endforeach; ?>
+    <br>
+    <p><a href="../index.php">Home Page</a></p>
+</body>
+
+</html>

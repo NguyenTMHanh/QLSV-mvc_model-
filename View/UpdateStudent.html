@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Update sinh vien</title>
+</head>
+
+<body>
+    <form action="../Controller/C_Student.php " method="POST" style="width: 400px; height:600px; padding:20px; margin-left:35%;display: grid; border-radius: 10px; border: 3px double gray">
+        <h2 style=" display:flex;justify-content: center;">Update student</h2>
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id" value="<?php echo $student->id; ?>" required><br><br>
+
+        <label for="name">Tên:</label>
+        <input type="text" id="name" name="name" value="<?php echo $student->name; ?>" required><br><br>
+
+        <label for="age">Tuổi:</label>
+        <input type="text" id="age" name="age"  value="<?php echo $student->age; ?>" required><br><br>
+
+        <label for="university">Trường đại học:</label>
+        <input type="text" id="university" name="university" value="<?php echo $student->university; ?>"  required><br><br>
+
+        <input type="submit" name="update" value="Sửa thông tin">
+    </form>
+    <br>
+    <p><a href="javascript:history.back()">Home Page</a></p>
+</body>
+
+</html>
